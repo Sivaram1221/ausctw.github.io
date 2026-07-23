@@ -1,238 +1,98 @@
-<!DOCTYPE html>
-<html lang='en'>
+ <!DOCTYPE html> 
+<html lang='en'> 
 
-<head>
-    <base href=".">
-    <meta charset="UTF-8">
-    <meta name="description" content="Australian Communication Theory Workshop 2027">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference, Communication Theory, AUSCTW">
+<head> 
+    <base href="."> 
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/> 
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/> 
+    <meta name="description" content="Australian Communication Theory Workshop 2027"> 
+    <meta name="resource-type" content="document"> 
+    <meta name="distribution" content="global"> 
+    <meta name="KeyWords" content="Conference, Communication Theory, AUSCTW"> 
     <!-- CUSTOMIZE: Change the browser tab title below -->
-    <title>AUSCTW 2027</title>
-    
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <title>AUSCTW 2027</title> 
+</head> 
 
-    <!-- Added custom styles to make the site more beautiful -->
-    <style>
-        :root {
-            --primary-color: #004b87;
-            --accent-color: #e0f2fe;
-            --text-color: #333333;
-            --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
+<body> 
 
-        body {
-            font-family: var(--font-family);
-            color: var(--text-color);
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 20px 0;
-            line-height: 1.6;
-        }
+    <div class="banner"> 
+        <!-- CUSTOMIZE: The style attribute below scales the huge image down to a maximum height of 300px while keeping it responsive -->
+        <img src="assets/ade.jpg" alt="AUSCTW 2027 Banner" style="width: 100%; max-height: 300px; object-fit: cover;"> 
+        <div class="top-left"> 
+            <!-- CUSTOMIZE: Change the Conference Title text below -->
+            <span class="title1">AUSCTW</span><span class="title2">2027</span> 
+        </div> 
+        <div class="bottom-right"> 
+            <!-- CUSTOMIZE: Change the Dates and Location text below -->
+            February 1-3, 2027 <br> Adelaide, Australia (Venue TBC) 
+        </div> 
+    </div> 
 
-        /* Container to keep content centered and readable */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #ffffff;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            overflow: hidden;
-        }
+    <!-- CUSTOMIZE: Change navigation links and labels below -->
+    <table class="navigation"> 
+        <tr> 
+            <td class="navigation"> 
+                <a class="current" title="Conference Home Page" href=".">Home</a> 
+            </td> 
+            <td class="navigation"> 
+                <a title="Register for the Conference" href="registration">Registration</a> 
+            </td> 
+            <td class="navigation"> 
+                <a title="Conference Program" href="program">Program</a>  
+            </td> 
+            <td class="navigation"> 
+                <a title="Directions to the Conference" href="directions">Directions</a> 
+            </td> 
+            <td class="navigation"> 
+                <a title="Conference Flyer" href="flyer">Flyer</a> 
+            </td> 
+        </tr> 
+    </table> 
 
-        /* Banner styling */
-        .banner {
-            position: relative;
-            background-color: #000;
-        }
+    <!-- CUSTOMIZE: Welcome Heading -->
+    <h2>Welcome to AUSCTW 2027</h2> 
+    <!-- CUSTOMIZE: Welcome Text Paragraphs -->
+    <p> 
+        We are thrilled to bring the Australian Communication Theory Workshop to Adelaide in 2027.  
+        AUSCTW continues to be the premier venue for presenting emerging and contemporary  
+        topics in communication theory, including 'work in progress'. 
+    </p> 
+    <p> 
+        A great conference at its heart needs high-quality technical content to stimulate  
+        engagement between participants. We invite you to join us for an enriching  
+        experience of talks, posters, and networking. 
+    </p> 
 
-        /* THIS SCALES DOWN YOUR HUGE JPG */
-        .banner img {
-            width: 100%;
-            height: 300px; /* Adjust this value to make the image taller or shorter */
-            object-fit: cover;
-            display: block;
-            opacity: 0.85; /* Slightly darkens the image so text is readable */
-        }
+    <!-- CUSTOMIZE: Call for Participation Heading -->
+    <h2>Call for Participation</h2> 
+    <!-- CUSTOMIZE: Call for Participation Text & List -->
+    <p> 
+        There are numerous ways you can participate: 
+        <ul> 
+            <li><strong>Attend:</strong> Registration is now open!</li> 
+            <li><strong>Submit:</strong> We invite abstracts for technical talks (20 mins)  
+                and poster presentations. Papers are not peer-reviewed or published in  
+                proceedings, making this an ideal venue for sharing new ideas.</li> 
+        </ul> 
+        Students are particularly encouraged to submit abstracts for poster presentations,  
+        where delegates can grab a coffee and discuss your work informally. 
+    </p> 
 
-        .banner .top-left, .banner .bottom-right {
-            position: absolute;
-            background: rgba(0, 75, 135, 0.85); /* Semi-transparent primary color */
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
+    <!-- CUSTOMIZE: Sponsorship Heading -->
+    <h2>Sponsorship</h2> 
+    <!-- CUSTOMIZE: Sponsorship Text -->
+    <p> 
+        It takes support to run a successful conference. If you can assist with  
+        sponsorship—whether through your company or personal contacts—we would  
+        love to hear from you! Your support is gratefully received. 
+    </p> 
+    <p><em>Get in touch if you'd like to sponsor this event and have your logo featured here!</em></p> 
 
-        .banner .top-left {
-            top: 20px;
-            left: 20px;
-        }
+    <footer> 
+        <!-- CUSTOMIZE: Footer Copyright Text -->
+        &copy; AUSCTW 2027 Organizers 
+        &nbsp;|&nbsp; Website template design by <a href="https://github.com/mikepierce">Mike Pierce</a> 
+    </footer> 
 
-        .banner .bottom-right {
-            bottom: 20px;
-            right: 20px;
-            text-align: right;
-            font-size: 0.95em;
-        }
-
-        .title1 { font-weight: 800; font-size: 1.8em; letter-spacing: 1px; }
-        .title2 { font-weight: 300; font-size: 1.8em; }
-
-        /* Modern Navigation menu (replaced the old table) */
-        nav {
-            background-color: var(--primary-color);
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 20px;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 15px 20px;
-            font-weight: 600;
-            font-size: 0.95em;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover, nav a.current {
-            background-color: rgba(255, 255, 255, 0.15);
-        }
-
-        /* Main Content Padding */
-        .content {
-            padding: 30px 40px;
-        }
-
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 8px;
-            margin-top: 30px;
-        }
-        
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        ul {
-            background: #f9f9f9;
-            padding: 20px 20px 20px 40px;
-            border-radius: 6px;
-            border-left: 4px solid var(--primary-color);
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #eeeeee;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.85em;
-            color: #666;
-            margin-top: 20px;
-        }
-        
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <!-- HEADER / BANNER SECTION -->
-        <div class="banner">
-            <!-- CUSTOMIZE: Update the src attribute if you change your image name -->
-            <img src="assets/ade.jpg" alt="AUSCTW 2027 Banner">
-            
-            <div class="top-left">
-                <!-- CUSTOMIZE: Change the Conference Title -->
-                <span class="title1">AUSCTW</span><span class="title2"> 2027</span>
-            </div>
-            
-            <div class="bottom-right">
-                <!-- CUSTOMIZE: Change the Dates and Location -->
-                February 1-3, 2027 <br> 
-                Adelaide, Australia (Venue TBC)
-            </div>
-        </div>
-
-        <!-- NAVIGATION SECTION -->
-        <nav>
-            <!-- CUSTOMIZE: Add or remove navigation links here -->
-            <a class="current" title="Conference Home Page" href=".">Home</a>
-            <a title="Register for the Conference" href="registration">Registration</a>
-            <a title="Conference Program" href="program">Program</a> 
-            <a title="Directions to the Conference" href="directions">Directions</a>
-            <a title="Conference Flyer" href="flyer">Flyer</a>
-        </nav>
-
-        <!-- MAIN CONTENT SECTION -->
-        <div class="content">
-            
-            <!-- CUSTOMIZE: Welcome Heading -->
-            <h2>Welcome to AUSCTW 2027</h2>
-            
-            <!-- CUSTOMIZE: Welcome Text Paragraphs -->
-            <p>
-                We are thrilled to bring the Australian Communication Theory Workshop to Adelaide in 2027. 
-                AUSCTW continues to be the premier venue for presenting emerging and contemporary 
-                topics in communication theory, including 'work in progress'.
-            </p>
-            <p>
-                A great conference at its heart needs high-quality technical content to stimulate 
-                engagement between participants. We invite you to join us for an enriching 
-                experience of talks, posters, and networking.
-            </p>
-
-            <!-- CUSTOMIZE: Call for Participation Heading -->
-            <h2>Call for Participation</h2>
-            
-            <!-- CUSTOMIZE: Call for Participation Text & List -->
-            <p>
-                There are numerous ways you can participate:
-            </p>
-            <ul>
-                <li><strong>Attend:</strong> Registration is now open!</li>
-                <li><strong>Submit:</strong> We invite abstracts for technical talks (20 mins) 
-                    and poster presentations. Papers are not peer-reviewed or published in 
-                    proceedings, making this an ideal venue for sharing new ideas.</li>
-            </ul>
-            <p>
-                Students are particularly encouraged to submit abstracts for poster presentations, 
-                where delegates can grab a coffee and discuss your work informally.
-            </p>
-
-            <!-- CUSTOMIZE: Sponsorship Heading -->
-            <h2>Sponsorship</h2>
-            
-            <!-- CUSTOMIZE: Sponsorship Text -->
-            <p>
-                It takes support to run a successful conference. If you can assist with 
-                sponsorship—whether through your company or personal contacts—we would 
-                love to hear from you! Your support is gratefully received.
-            </p>
-            <p><em>Get in touch if you'd like to sponsor this event and have your logo featured here!</em></p>
-
-        </div> <!-- End of Content -->
-
-        <!-- FOOTER SECTION -->
-        <footer>
-            <!-- CUSTOMIZE: Footer Copyright Text -->
-            &copy; 2027 AUSCTW Organizers 
-            &nbsp;|&nbsp; 
-            Website template design by <a href="https://github.com/mikepierce" target="_blank">Mike Pierce</a>
-        </footer>
-    </div> <!-- End of Container -->
-
-</body>
+</body> 
 </html>
