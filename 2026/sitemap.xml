@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- replace WEBSITE with the address where this site is being hosted -->
+   <url>
+       <loc>www.ausctw.org</loc>
+   </url>
+   <url>
+       <loc>www.ausctw.org/registration</loc>
+   </url>
+   <url>
+       <loc>www.ausctw.org/programme</loc>
+   </url>
+   <url>
+       <loc>www.ausctw.org/venue</loc>
+   </url>
+   <url>
+       <loc>www.ausctw.org/CFP</loc>
+   </url>
+   <url>
+       <loc>www.ausctw.org/committee</loc>
+   </url>
+</urlset> 
+
