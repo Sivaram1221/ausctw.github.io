@@ -11,36 +11,49 @@
     <meta name="KeyWords" content="Conference, Communication Theory, AUSCTW"> 
     <title>AusCTW 2027</title> 
     <style>
-        .banner-fixed {
+        /* Container that holds the banner image cleanly */
+        .banner-container {
             position: relative;
             width: 100%;
-            height: 250px;
-            background-image: url('assets/ade.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
+            height: 280px;
+            background-color: #f8f9fa; /* Clean background color filling the side gaps */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
-        .banner-fixed .top-left {
+        /* Ensures the entire image fits completely without cropping */
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; 
+        }
+        /* Text overlays positioned cleanly over the banner */
+        .banner-container .top-left {
             position: absolute;
             top: 20px;
             left: 20px;
             font-size: 2rem;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            color: #222; /* Dark text for contrast if background is light */
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
         }
-        .banner-fixed .bottom-right {
+        .banner-container .bottom-right {
             position: absolute;
             bottom: 20px;
             right: 20px;
             text-align: right;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            color: #222;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
         }
     </style>
 </head> 
 
 <body> 
 
-    <div class="banner-fixed"> 
+    <div class="banner-container"> 
+        <img src="assets/ade.jpg" alt="AUSCTW 2027 Banner">
         <div class="top-left"> 
             <span class="title1">AusCTW</span><span class="title2">2027</span> 
         </div> 
@@ -49,7 +62,7 @@
         </div> 
     </div> 
 
-    <!-- Clean Navigation links (No 2026 tab here) -->
+    <!-- Clean Navigation links -->
     <table class="navigation"> 
         <tr> 
             <td class="navigation"> 
