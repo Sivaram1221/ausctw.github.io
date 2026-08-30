@@ -104,6 +104,36 @@
             padding-left: 20px;
         }
 
+        /* Dropdown styling for Organizing Committee */
+        details.committee-dropdown {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            background-color: #fcfcfc;
+            overflow: hidden;
+        }
+        details.committee-dropdown summary {
+            font-size: 1.35rem;
+            color: #111;
+            font-weight: 600;
+            padding: 12px 15px;
+            cursor: pointer;
+            outline: none;
+            border-bottom: 1px solid transparent;
+            transition: background-color 0.2s ease;
+        }
+        details.committee-dropdown[open] summary {
+            border-bottom: 1px solid #eaeaea;
+            background-color: #f7f9fa;
+        }
+        details.committee-dropdown summary:hover {
+            background-color: #f7f9fa;
+        }
+        .committee-content {
+            padding: 15px 20px;
+        }
+
         /* Clean Footer */
         footer {
             margin-top: 60px;
@@ -128,7 +158,7 @@
 
     <div class="page-container">
 
-        <!-- Academic Header (Emphasized Workshop Name & Metadata) -->
+        <!-- Academic Header (Emphasised Workshop Name & Metadata) -->
         <div class="site-header">
             <h1>AusCTW <span class="accent">2027</span></h1>
             <div class="conference-meta">
@@ -148,7 +178,7 @@
             <a href="registration">Registration</a> /
             <a href="program">Program</a> /
             <a href="directions">Directions</a> /
-            <a href="flyer">Flyer</a>
+            <a href="call-for-papers">Call for Papers</a>
         </div>
 
         <!-- Welcome Heading -->
@@ -189,19 +219,25 @@
             love to hear from you! Your support is gratefully received. 
         </p> 
         <p><em>Get in touch if you'd like to sponsor this event and have your logo featured here!</em></p> 
-<!-- Committee Heading -->
-        <h2>Organizing Committee</h2>
-        <p>
-            <strong>General Chair:</strong> Prof. Jinho Choi<br>
-            <strong>Sponsors Scout:</strong> Dr. Shengjian Chen, Dr. Debabrata Karmokar<br>
-            <strong>Finance:</strong> Dr. Yee Wei Law<br>
-            <strong>Venue:</strong> Dr. Khoa Nguyen, Prof. Withawat Withayachumnankul<br>
-            <strong>Program:</strong> Dr. Ikram Boukhedimi<br>
-            <strong>Website:</strong> Dr. Sivaram Krishnan
-        </p>
+
+        <!-- Organizing Committee Dropdown -->
+        <details class="committee-dropdown">
+            <summary>Organising Committee</summary>
+            <div class="committee-content">
+                <p>
+                    <strong>General Chair:</strong> Prof. Jinho Choi<br>
+                    <strong>Sponsors Scout:</strong> Dr. Shengjian Chen, Dr. Debabrata Karmokar<br>
+                    <strong>Finance:</strong> Dr. Yee Wei Law<br>
+                    <strong>Venue:</strong> Dr. Khoa Nguyen, Prof. Withawat Withayachumnankul<br>
+                    <strong>Program:</strong> Dr. Ikram Boukhedimi<br>
+                    <strong>Website:</strong> Dr. Sivaram Krishnan
+                </p>
+            </div>
+        </details>
+
         <footer> 
             <!-- Footer Copyright Text -->
-            &copy; AusCTW 2027 Organizers 
+            &copy; AusCTW 2027 Organisers 
             &nbsp;|&nbsp; Website template design by <a href="https://github.com/mikepierce">Mike Pierce</a> 
             &nbsp;|&nbsp; <a href="2026/AusCTW2026/">View AusCTW 2026 Archive</a> 
         </footer>
