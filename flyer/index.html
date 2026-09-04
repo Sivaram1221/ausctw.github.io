@@ -8,7 +8,7 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference, Communication Theory, AUSCTW">
-    <title>Flyer | AusCTW 2027</title>
+    <title>Call for Papers | AusCTW 2027</title>
     <style>
         /* Minimalist Academic Styling */
         body {
@@ -75,9 +75,43 @@
             font-weight: 600;
         }
 
-        p {
+        p, ul {
             color: #333;
             margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Dropdown styling for Key Topics */
+        details.topics-dropdown {
+            margin-top: 30px;
+            margin-bottom: 25px;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            background-color: #fcfcfc;
+            overflow: hidden;
+        }
+        details.topics-dropdown summary {
+            font-size: 1.35rem;
+            color: #111;
+            font-weight: 600;
+            padding: 12px 15px;
+            cursor: pointer;
+            outline: none;
+            border-bottom: 1px solid transparent;
+            transition: background-color 0.2s ease;
+        }
+        details.topics-dropdown[open] summary {
+            border-bottom: 1px solid #eaeaea;
+            background-color: #f7f9fa;
+        }
+        details.topics-dropdown summary:hover {
+            background-color: #f7f9fa;
+        }
+        .topics-content {
+            padding: 15px 20px;
         }
 
         footer {
@@ -107,29 +141,67 @@
         <div class="site-header">
             <h1>AusCTW <span class="accent">2027</span></h1>
             <div class="conference-meta">
-                <strong>Call For Papers</strong>
+                <strong>Call for Papers</strong><br>
+                February 1-3, 2027 &mdash; Adelaide, Australia (Venue TBC)
             </div>
         </div>
 
-<h2>Call for Papers & Submissions</h2> 
+        <!-- Clean Navigation Links -->
+        <div class="nav-links">
+            <a href=".">Home</a> /
+            <a href="registration">Registration</a> /
+            <a href="program">Program</a> /
+            <a href="directions">Directions</a> /
+            <a class="current" href="call-for-papers">Call for Papers</a>
+        </div>
+
+        <h2>Call for Papers & Submissions</h2>
         
+        <!-- Key Topics Dropdown Menu -->
+        <details class="topics-dropdown">
+            <summary>Key Topics (Indicative &mdash; All Communications-Theory Work Welcome)</summary>
+            <div class="topics-content">
+                <ul>
+                    <li>Information theory and coding</li>
+                    <li>Non-terrestrial and satellite links</li>
+                    <li>Wireless &amp; cellular systems (including 5G/6G/B6G)</li>
+                    <li>Physical-layer security and privacy</li>
+                    <li>Signal processing for communications</li>
+                    <li>AI/Machine learning for communications</li>
+                    <li>Network information theory and distributed systems</li>
+                    <li>Quantum communications</li>
+                    <li>mmWave and THz systems</li>
+                    <li>Wireless and passive sensing</li>
+                </ul>
+            </div>
+        </details>
+
         <p>
-            Papers will be presented in poster sessions, allowing maximum interaction between researchers and workshop delegates.
+            Papers will be presented in poster sessions, allowing maximum interaction between researchers and workshop delegates. 
+            AusCTW prioritises poster presentations to maximise discussion and collaboration. We invite you to prepare an abstract summarising your work or work-in-progress.
         </p>
         <p>
-            The <strong>deadline</strong> for abstracts is expected to be early January, to give us time to typeset and print the booklet of abstracts for distribution at the workshop.
-        </p>
-        <p>
-            Abstracts can be submitted via the following form: <a href="https://forms.gle/A47ohieQaCDS9r6F9" target="_blank">https://forms.gle/A47ohieQaCDS9r6F9</a>
+            <strong>Abstract Guidelines:</strong>
+            <ul>
+                <li><strong>Length:</strong> Approximately 250–300 words (brief and self-contained).</li>
+                <li><strong>Deadline:</strong> Expected to be early January 2027 (exact date to be announced), to give us time to typeset and print the booklet of abstracts for distribution at the workshop.</li>
+                <li><strong>Submission:</strong> Abstracts can be submitted via the following form: <a href="https://forms.gle/A47ohieQaCDS9r6F9" target="_blank">https://forms.gle/A47ohieQaCDS9r6F9</a></li>
+            </ul>
         </p>
 
         <h2>Keynotes & Tutorials</h2>
         <p>
-            If you have a proposal for a keynote or tutorial oral presentation, get in touch by email at <a href="mailto:ausctw@gmail.com">ausctw@gmail.com</a>.
+            If you have a proposal for a keynote or tutorial oral presentation, get in touch by email at <a href="mailto:ausctw@gmail.com">ausctw@gmail.com</a> with the subject line <em>&ldquo;[AusCTW2027 talk]&rdquo;</em>. Time is limited!
         </p>
         <p>
             Similarly, if you know someone who could give a talk of interest to our community, let us know and we can reach out to them. Thank you!
         </p>
+
+        <footer>
+            &copy; AusCTW 2027 Organisers
+            &nbsp;|&nbsp; Website template design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+            &nbsp;|&nbsp; <a href="2026/AusCTW2026/">View AusCTW 2026 Archive</a>
+        </footer>
 
     </div>
 
